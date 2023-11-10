@@ -1,0 +1,10 @@
+http://localhost:8080/weather?location=Semarang
+
+Hasilnya :
+
+Weather Forecast
+Location: Semarang, Indonesia
+
+Temperature: 21.8°C (71.3°F)
+
+Condition: Patchy rain possible
