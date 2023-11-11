@@ -154,7 +154,7 @@ func fetchWeatherData(apiKey, location string) (*WeatherResponse, error) {
 }
 
 func weatherForecastHandler(c *gin.Context) {
-	apiKey := "cc0a364fa16d48d0941135837230311" // Ganti dengan kunci API WeatherAPI.com Anda
+	apiKey := "cc0a364fa16d48d0941135837230311" 
 	location := c.Query("location")
 	if location == "" {
 		c.HTML(http.StatusBadRequest, "error.html", gin.H{"error": "Location is required"})
@@ -179,7 +179,7 @@ func main() {
 	// Endpoint for weather forecast
 	router.GET("/weather", weatherForecastHandler)
 
-	port := 8080 // Pilih port yang ingin Anda gunakan
+	port := 8080
 	serverAddress := fmt.Sprintf(":%d", port)
 
 	fmt.Printf("Server is running on %s...\n", serverAddress)
